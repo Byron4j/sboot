@@ -11,13 +11,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!--当前模块的项目名-->
-    <artifactId>springboot-first</artifactId>
+    <artifactId>springboot-bind-prop</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.14</version>
         </dependency>
     </dependencies>
 

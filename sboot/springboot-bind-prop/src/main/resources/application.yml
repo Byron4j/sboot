@@ -1,0 +1,18 @@
+yaml:
+  str: 字符串这是
+  num: 12
+  dnum: 3.14
+  birthday: 2019/01/19 12:30:14
+#  hobby:
+#    - coding
+#    - basketball
+#    - football
+  hobby: [coding, basketball, football]
+  map: {key1: val1, key2: val2}
+  users:
+    - username: zsf
+      age: 149
+    - username: zs
+      age: 20
+server:
+  port: 8083
