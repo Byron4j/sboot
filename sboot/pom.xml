@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.byron4j</groupId>
+    <artifactId>sboot</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>springboot-first</module>
+        <module>springboot-config</module>
+        <module>springboot-yaml</module>
+        <module>springboot-bind-prop</module>
+    </modules>
+
+
+    <!--作为父模块，设置为pom打包方式-->
+    <packaging>pom</packaging>
+
+    <!--将boot-starter设置为父模块-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.4.RELEASE</version>
+    </parent>
+
+
+    <dependencies>
+        <!--依赖web模块，可以点击artifactId的值进去看到依赖了一组其他的jar-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!--创建可执行jar包，需要添加这个插件-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
