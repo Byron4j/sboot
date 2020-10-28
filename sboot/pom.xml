@@ -12,6 +12,7 @@
         <module>springboot-config</module>
         <module>springboot-yaml</module>
         <module>springboot-bind-prop</module>
+        <module>springboot-profile</module>
     </modules>
 
 
@@ -31,6 +32,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!--为备@ConfigurationProperties标记的类在进行配置时提供提示信心帮助编写-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.14</version>
         </dependency>
     </dependencies>
 

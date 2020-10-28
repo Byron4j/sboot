@@ -1,0 +1,11 @@
+server:
+  port: 8085
+logging:
+  level:
+    web: debug
+
+
+acme:
+  enabled: false
+  remote-address: 192.168.10.20
+  host: ${acme.remote-address}:8085

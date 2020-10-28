@@ -1,0 +1,26 @@
+spring.profiles.active: prd
+
+server:
+  port: 8085
+logging:
+  level:
+    web: debug
+
+acme:
+  enabled: false
+  remote-address: 192.168.10.10
+spring:
+  profiles: default
+---
+acme:
+  enabled: false
+  remote-address: 192.168.10.20
+spring:
+  profiles: test
+---
+
+acme:
+  enabled: false
+  remote-address: 192.168.10.30
+spring:
+  profiles: prd

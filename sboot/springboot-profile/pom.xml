@@ -11,13 +11,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <!--当前模块的项目名-->
-    <artifactId>springboot-bind-prop</artifactId>
+    <artifactId>springboot-profile</artifactId>
 
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
             <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-properties-migrator</artifactId>
+            <scope>runtime</scope>
         </dependency>
 
         <dependency>
